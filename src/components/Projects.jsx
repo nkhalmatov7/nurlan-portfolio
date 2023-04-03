@@ -17,7 +17,7 @@ const Projects = () => {
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem img={whatsApp_clone} title="WhatsApp Clone" desc="JavaScript, React, Context API, Firebase, Google Auth" link='https://whatsapp-clone-c1d01.web.app/'/>
-        <ProjectItem img={my_portfolio} title="My Portfolio" />
+        <ProjectItem img={my_portfolio} title="My Portfolio" desc="JavaScript, React, Context API, Firebase, Google Auth" link='https://main--nurlans-portfolio.netlify.app/'/>
       </div>
     </div>
   )
