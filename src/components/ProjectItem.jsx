@@ -13,7 +13,7 @@ const ProjectItem = ({ img, title, desc, link }) => {
         </p>
         <a href={link} target="_blank">
           <p className="text-center p-3 rounded-lg bg-white to-gray-700 font-bold cursor-pointer text-lg">
-            More Info
+            Link to Website
           </p>
         </a>
       </div>

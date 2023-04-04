@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
+import bestEats_food_app from '../assets/bestEats_food_app.png'
 import whatsApp_clone from '../assets/whatsApp_clone.png'
-import my_portfolio from '../assets/my_portfolio.png'
 
 const Projects = () => {
   return (
@@ -10,14 +10,24 @@ const Projects = () => {
         Projects
       </h1>
       <p className="text-center py-8">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+        {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
         reiciendis iure, rerum molestias tenetur expedita adipisci quia
         perspiciatis maxime? Pariatur totam dicta molestias? Ipsa perferendis
-        odio delectus exercitationem perspiciatis tempora?
+        odio delectus exercitationem perspiciatis tempora? */}
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
-        <ProjectItem img={whatsApp_clone} title="WhatsApp Clone" desc="JavaScript, React, Context API, Firebase, Google Auth" link='https://whatsapp-clone-c1d01.web.app/'/>
-        <ProjectItem img={my_portfolio} title="My Portfolio" desc="JavaScript, React, Context API, Firebase, Google Auth" link='https://main--nurlans-portfolio.netlify.app/'/>
+        <ProjectItem
+          img={whatsApp_clone}
+          title="WhatsApp Clone"
+          desc="JavaScript, React, Context API, React-Router, Firebase, Google Auth"
+          link="https://whatsapp-clone-c1d01.web.app/"
+        />
+        <ProjectItem
+          img={bestEats_food_app}
+          title="Food App"
+          desc="JavaScript, React, TailwindCSS, Firebase"
+          link="https://foodapp-9dce0.web.app/"
+        />
       </div>
     </div>
   )
