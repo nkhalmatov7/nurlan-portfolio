@@ -1,18 +1,23 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import mainPhoto from '../assets/mainPic.jpeg'
 
 const Main = () => {
   return (
     <div id="main">
-      <img
-        className="w-full h-screen object-cover object-left"
-        src="https://images.pexels.com/photos/4976592/pexels-photo-4976592.jpeg"
-        alt="Men backview"
-      />
-      <div className="w-full h-screen absolute top-0 bg-white/50">
+      <div
+        className="w-full h-screen bg-no-repeat bg-cover bg-bottom"
+        style={{ backgroundImage: `url(${mainPhoto})` }}
+      ></div>
+      {/* <img
+        className="w-screen h-screen object-buttom"
+        src={mainPhoto}
+        alt="My photo"
+      /> */}
+      <div className="w-full h-screen absolute top-0 bg-white/50 text-black">
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center">
-          <h2 className="sm:text-3xl text-xl font-bold text-[#25241f] font-serif">
+          <h2 className="sm:text-3xl text-xl font-bold font-serif">
             I'm
             <br />
             <TypeAnimation
